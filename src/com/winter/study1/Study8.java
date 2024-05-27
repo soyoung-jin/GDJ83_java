@@ -18,55 +18,57 @@ public class Study8 {
 		System.out.println(":::: 게임을 시작합니다. ::::");
 		Scanner sc = new Scanner(System.in);
 		int shoot = 3;
-		
-//		while(shoot>0) {
-//			System.out.println("번호를 선택하세요.");
-//			System.out.println("1.단발, 2.점사");
-//			int pick = sc.nextInt();
-//			if(pick == 1) {
-//				for(int i =0; i<30; i++) {
-//					System.out.print("탕! ");
-//				}
-//				System.out.println();
-//				System.out.println("탄창이 비워졌습니다.");
-//				shoot--;
-//				continue;
-//			}
-//			
-//			if(pick == 2) {
-//				for(int i =0; i<10; i++) {
-//					System.out.print("타타탕! ");
-//				}
-//				System.out.println();
-//				System.out.println("탄창이 비워졌습니다.");
-//				shoot--;
-//				continue;
-//			}
-//		}
-//		System.out.println(":::: 게임을 종료합니다. ::::");
 //		
-		
-		int sum = 10;
-		String sound ="";
-		for(int i =0; i< shoot; i++) {
-			System.out.println("1.단발, 2. 점사");
+		while(shoot>0) {
+			System.out.println("번호를 선택하세요.");
+			System.out.println("1.단발, 2.점사");
 			int pick = sc.nextInt();
-			System.out.println(pick);
-			if(shoot == 1) {
-				sum = 30;
-				sound = "탕";
-				
-			} else {
-				sum = 10;
-				sound = "탕탕";
-				
+			if(pick == 1) {
+				for(int i =0; i<30; i++) {
+					System.out.print("탕! ");
+				}
+				System.out.println();
+				System.out.println("탄창이 비워졌습니다.");
+				shoot--;
+				continue;
+			}
+			
+			if(pick == 2) {
+				for(int i =0; i<10; i++) {
+					System.out.print("타타탕! ");
+				}
+				System.out.println();
+				System.out.println("탄창이 비워졌습니다.");
+				shoot--;
+				continue;
 			}
 		}
+		System.out.println(":::: 게임을 종료합니다. ::::");
+//		
+		
+//		int sum = 10;
+//		String sound ="";
+//		for(int i =0; i< shoot; i++) {
+//			System.out.println("1.단발, 2. 점사");
+//			int pick = sc.nextInt();
+//			System.out.println(pick);
+//			if(shoot == 1) {
+//				sum = 30;
+//				sound = "탕";
+//				
+//			} else {
+//				sum = 10;
+//				sound = "탕탕";
+//				
+//			}
+//		}
+//		
+//		
+//		for(int i =0; i<sum; i++) {
+//			System.out.print(sound);
+//		}
 		
 		
-		for(int i =0; i<sum; i++) {
-			System.out.print(sound);
-		}
 		
 		
 	}

@@ -7,7 +7,6 @@ public class Monster {
 	int exp = 10;
 	String species = "오크";
 	int hp = 100;
-	Tool axe = new Tool();
-	String kind = "괴물";
+	Axe axe = new Axe();
 
 }

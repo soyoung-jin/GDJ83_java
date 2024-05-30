@@ -1,6 +1,4 @@
-package com.winter.study3.student;
-
-import com.winter.study3.ex1.Monster;
+package com.winter.study3.ex1;
 
 import java.util.Random;
 

@@ -1,12 +1,13 @@
 package com.winter.study3.ex1;
 
 public class Monster {
-	int hp;
-	int level;
-	String kind;
-	int exp;
-	String name;
 
-	Tool axe;
+	String name = "오우거";
+	int level = 5;
+	int exp = 10;
+	String species = "오크";
+	int hp = 100;
+	Tool axe = new Tool();
+	String kind = "괴물";
 
 }

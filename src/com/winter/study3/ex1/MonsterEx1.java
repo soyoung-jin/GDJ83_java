@@ -17,7 +17,23 @@ public class MonsterEx1 {
 		System.out.println(mon.exp);
 		System.out.println(mon.name);
 
-		Monster m2 = new Monster();
+		Tool axe = new Tool();
+		axe.name = "이빠진도끼";
+		axe.damage = 10;
+		axe.range = 1;
+//		axe.durability = 100;
+//		axe.upgrade = 0;
+
+		mon.axe = axe;
+
+		System.out.println(mon.axe.name);
+
+		axe = new Tool();
+		axe.name = "이빠진도끼";
+		System.out.println(mon.axe.name);
+
+		Monster mon2 = new Monster();
+		mon.axe = axe;
 
 	}
 }

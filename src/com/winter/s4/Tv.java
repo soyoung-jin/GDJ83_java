@@ -1,5 +1,7 @@
 package com.winter.s4;
 
-public class Tv {
+public class Tv extends Electronic {
+
+	int size;
 
 }

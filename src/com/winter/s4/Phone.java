@@ -1,5 +1,6 @@
 package com.winter.s4;
 
-public class Phone {
+public class Phone extends Electronic {
+	String color;
 
 }

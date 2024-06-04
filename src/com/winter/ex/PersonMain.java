@@ -1,4 +1,4 @@
-package com.winter.s1;
+package com.winter.ex;
 
 class PersonMain {
 	public static void main(String[] args) {

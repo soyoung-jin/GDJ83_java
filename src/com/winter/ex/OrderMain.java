@@ -1,4 +1,4 @@
-package com.winter.s1;
+package com.winter.ex;
 
 import java.util.Scanner;
 

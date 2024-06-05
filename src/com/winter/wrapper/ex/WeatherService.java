@@ -30,7 +30,7 @@ public class WeatherService {
 		wd.setGion(Double.parseDouble(sb1[1]));
 		wd.setStatus(sb1[2]);
 		wd.setHumidity(Integer.parseInt(sb1[3]));
-		
+
 		System.out.println(sb1.length);
 
 	}

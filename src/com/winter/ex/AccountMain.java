@@ -9,6 +9,9 @@ public class AccountMain {
 		ac.deposit(2000000);
 		ac.withdraw(20000);
 
+		System.out.println(ac.toString());
+		System.out.println(ac);
+
 	}
 
 }

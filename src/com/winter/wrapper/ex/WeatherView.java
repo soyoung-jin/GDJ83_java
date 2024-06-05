@@ -1,8 +1,29 @@
 package com.winter.wrapper.ex;
 
 public class WeatherView {
+
+	public void view(WeatherDTO weatherDTO) {
+
+		if (weatherDTO != null) {
+
+			System.out.println(weatherDTO.getCity());
+			System.out.println(weatherDTO.getGion());
+			System.out.println("===================");
+		} else {
+			System.out.println("날씨정보가 없다");
+		}
+	}
+
 	// view
-	// 날씨들의 정보를 받아서 이쁘게 출력하는 역할만 하면됨.
-	// 여기서 데이터를 만들자는게 아니라 데이터를 받아서 출력하는 역할만 하면 됨.
-	// 항상 클라이언트 얘기를 듣고 출력하기 내 맘대로 하지않기!
+	// 날씨들의 정보를 받아서 이쁘게 출력
+	public void view(WeatherDTO[] dtos) {
+
+		for (int i = 0; i < dtos.length; i++) {
+			System.out.println(dtos[i].getCity());
+			System.out.println(dtos[i].getGion());
+			System.out.println("===================");
+		}
+
+	}
+
 }

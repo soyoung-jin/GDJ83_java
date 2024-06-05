@@ -2,18 +2,17 @@ package com.winter.wrapper.ex;
 
 public class WeatherDTO {
 
-	// DTO의 모든 멤버변수는 private으로 설정한다.
-	// 외부에서 접근이 불가하다. getter setter가 필요하다.
-	// 생성자는 여러개 만들어도 상관없지만, 무조건 기본생성자는 필수
-	//
+	// DTO의 모든 멤버변수는 private 설정
+	// Getters/Setters 필요
+	// 생성자는 여러개 만들어도 상관없지만 기본생성자는 필수
 
 	// 도시명
 	private String city;
-	// 온도
+	// 기온
 	private double gion;
-	// 날씨
+	// 날씨정보
 	private String status;
-	//
+	// 습도
 	private int humidity;
 
 	public String getCity() {

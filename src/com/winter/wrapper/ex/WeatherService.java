@@ -1,6 +1,7 @@
 package com.winter.wrapper.ex;
 
 import java.util.Scanner;
+import java.util.StringTokenizer;
 
 public class WeatherService {
 
@@ -25,9 +26,26 @@ public class WeatherService {
 		info = info.replace(",", "-");
 		// info= info.replace(" ", "");
 
-		WeatherDTO[] dtos = this.getWeathers(info);
+		WeatherDTO[] dtos = this.useTokenizer(info); // getWeathers(info);
 
 		return dtos;
+
+	}
+
+	private WeatherDTO[] useTokenizer(String info) {
+		WeatherDTO[] ar = new WeatherDTO[4];
+		StringTokenizer st = new StringTokenizer(info, "-");
+		int idx = 0;
+		while (st.hasMoreTokens()) {
+			WeatherDTO weatherDTO = new WeatherDTO();
+			weatherDTO.setCity(st.nextToken().trim());
+			weatherDTO.setGion(Double.parseDouble(st.nextToken().trim()));
+			weatherDTO.setStatus(st.nextToken().trim());
+			weatherDTO.setHumidity(Integer.parseInt(st.nextToken().trim()));
+			ar[idx] = weatherDTO;
+			idx++;
+		}
+		return ar;
 
 	}
 

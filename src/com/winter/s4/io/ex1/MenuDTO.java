@@ -1,16 +1,17 @@
 package com.winter.s4.io.ex1;
 
 public class MenuDTO {
-	private String MenuName;
+
+	private String menuName;
 	private int price;
 	private int kcal;
 
 	public String getMenuName() {
-		return MenuName;
+		return menuName;
 	}
 
 	public void setMenuName(String menuName) {
-		MenuName = menuName;
+		this.menuName = menuName;
 	}
 
 	public int getPrice() {

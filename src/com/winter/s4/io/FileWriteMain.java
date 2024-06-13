@@ -31,6 +31,7 @@ public class FileWriteMain {
 				}
 				// e나 E가 입력되면 종료
 				fw.write(s + "\r\n");
+				fw.flush(); // 버퍼를 강제로 비우라는 메서드, 한번씩 꼭 써줘야 돌아감
 			}
 		} catch (IOException e) {
 			// TODO Auto-generated catch block

@@ -20,7 +20,7 @@ public class CalendarMain2 {
 		b = b + 1000 * 60 * 60 * 24 * 100L;
 		birth.setTimeInMillis(b);
 		System.out.println(birth.getTime());
-		birth.roll(0, false)
+		birth.roll(0, false);
 
 	}
 

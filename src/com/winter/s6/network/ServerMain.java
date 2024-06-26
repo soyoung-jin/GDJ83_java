@@ -20,6 +20,11 @@ public class ServerMain {
 		// 3번이 오면 종료
 		// 2번에서 어느 학생을 뽑을 것인지, 학생의 번호를 가져와야함(데이터도 꺼내 와야함)
 		// 데이터를 어떻게 파싱할것인지를 정해야 함
+		/*
+		 * 1. 연결 2. Stream연결 3. Data 주고받기 a) 파일 읽어서 전송 전에 하나의 문자열로 만들기 b) 받은 문자열을 파싱하는
+		 * 기능 4. 콘솔에 출력
+		 * 
+		 */
 
 		ServerSocket ss = null;
 		Socket sc = null;
@@ -35,7 +40,7 @@ public class ServerMain {
 
 			while (true) {
 				// 서버를 열고 Client 접속을 기다림
-				System.out.println("서버실행 후 클라이언트를 기다림");
+				System.out.println("서버 실행 후 클라이언트를 기다림");
 				sc = ss.accept();
 				System.out.println("client와 연결 성공");
 
